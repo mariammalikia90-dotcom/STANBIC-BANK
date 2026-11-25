@@ -1,0 +1,184 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F6F9;
+    color: #333;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #1A1A2E;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #D4AF37;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.sidebar h3 {
+    margin-top: 30px;
+}
+
+.sidebar p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.sidebar hr {
+    border: 1px solid #444;
+    margin-top: 20px;
+}
+
+.sidebar nav {
+    margin-top: 35px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav a:hover {
+    background-color: #D4AF37;
+    color: #1A1A2E;
+}
+
+
+/* Main Content */
+.main-content {
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.main-content h1 {
+    color: #1A1A2E;
+}
+
+.main-content h2 {
+    color: #1A1A2E;
+    margin-top: 35px;
+}
+
+
+/* Welcome Section */
+.welcome {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.welcome h1 {
+    margin-top: 0;
+}
+
+
+/* Summary Cards */
+.metrics {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.metric-card {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.metric-card h3 {
+    color: #555;
+    font-size: 16px;
+}
+
+.number {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1A1A2E;
+}
+
+.metric-card small {
+    color: #777;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* Sections */
+section {
+    margin-bottom: 35px;
+}
+
+
+/* Responsive Layout */
+@media screen and (max-width: 800px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar nav {
+        margin-top: 15px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .metrics {
+        flex-direction: column;
+    }
+
+}

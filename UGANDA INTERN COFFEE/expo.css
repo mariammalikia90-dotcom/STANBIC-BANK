@@ -1,0 +1,330 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #4E2D1E;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #D4AF37;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #D4AF37;
+}
+
+
+/* HOMEPAGE HEADER */
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 22px;
+    margin: 10px;
+}
+
+
+/* OVERVIEW */
+
+.overview {
+    padding: 50px;
+    text-align: center;
+}
+
+.overview h2 {
+    color: #4E2D1E;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.overview p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+/* REGISTER BUTTON */
+
+.register-btn {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: #4E2D1E;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.register-btn:hover {
+    background-color: #4E2D1E;
+    color: white;
+}
+
+
+/* KEY HIGHLIGHTS */
+
+.highlights {
+    padding: 50px;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 30px;
+    color: #4E2D1E;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 8px;
+    border-bottom: 5px solid #4E2D1E;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 35px;
+    color: #D4AF37;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+
+/* OTHER PAGE HEADINGS */
+
+.page-heading {
+    text-align: center;
+    padding: 40px;
+    background-color: #4E2D1E;
+    color: white;
+}
+
+.page-heading h1 {
+    font-size: 35px;
+    color: #D4AF37;
+}
+
+
+/* PROGRAMME TABLE */
+
+.programme {
+    padding: 40px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4E2D1E;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F5E6CC;
+}
+
+
+/* SPEAKER CARDS */
+
+.speakers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.speaker-card {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.speaker-card h3 {
+    color: #4E2D1E;
+    margin-top: 15px;
+}
+
+.speaker-card h4 {
+    color: #D4AF37;
+    margin: 8px;
+}
+
+
+/* ADDITIONAL SPEAKERS */
+
+.additional-speakers {
+    padding: 40px;
+}
+
+.additional-speakers h2 {
+    text-align: center;
+    color: #4E2D1E;
+    margin-bottom: 25px;
+}
+
+/* ALTERNATING TABLE ROWS */
+
+.additional-speakers tr:nth-child(even) {
+    background-color: #F5E6CC;
+}
+
+.additional-speakers tr:nth-child(odd) {
+    background-color: white;
+}
+
+
+/* CALL FOR PAPERS */
+
+.call-papers {
+    padding: 40px;
+    background-color: #F5E6CC;
+}
+
+.call-papers h2 {
+    color: #4E2D1E;
+    margin-bottom: 20px;
+}
+
+.call-papers p {
+    margin-bottom: 15px;
+}
+
+.call-papers h3 {
+    color: #4E2D1E;
+    margin: 20px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #4E2D1E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .speaker-card {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .programme {
+        padding: 15px;
+    }
+
+}

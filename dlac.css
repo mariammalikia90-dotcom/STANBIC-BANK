@@ -1,0 +1,217 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #002D62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #D4AF37;
+    color: #002D62;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 45, 98, 0.75);
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    color: #002D62;
+    margin: 30px 0;
+}
+
+/* Loan Cards - Flexbox */
+.loan-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.loan-card {
+    background-color: white;
+    border: 2px solid #002D62;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.loan-card h3 {
+    color: #002D62;
+}
+
+/* Apply Button */
+.apply-btn {
+    display: inline-block;
+    background-color: #002D62;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.apply-btn:hover {
+    background-color: #D4AF37;
+    color: #002D62;
+}
+
+/* Comparison Table */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #002D62;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #002D62;
+    color: white;
+}
+
+.note {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Form Container */
+.form-container {
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #002D62;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* Legend */
+legend {
+    color: #002D62;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Form Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background-color: #002D62;
+    color: white;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D4AF37;
+    color: #002D62;
+}
+
+/* Footer */
+footer {
+    background-color: #002D62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+    .loan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loan-card {
+        width: 85%;
+    }
+
+    .form-container {
+        width: 85%;
+    }
+
+    .hero-text {
+        width: 75%;
+    }
+}
